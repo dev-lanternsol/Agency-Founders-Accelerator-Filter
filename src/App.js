@@ -11,7 +11,7 @@ function App() {
   const search = (data) => {
     return data.filter(
       (item) =>
-        keys.some(key=>item[key]?.toLowerCase().includes(query))
+        keys.some(key=>item[key]?.toLowerCase().includes(query.toLowerCase()))
     );
   }
 
